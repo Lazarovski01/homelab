@@ -28,3 +28,10 @@ spec:
   values:
     grafana:
       adminPassword: lazar
+    ingress:
+      enabled: true
+      annotations:
+        kubernetes.io/ingress.class: traefik
+      hosts:
+        - grafana.ladat.me
+      path: /
